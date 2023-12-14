@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>08bc305c-8191-4665-8c74-1439a01f4f0a</Guid>
+    <Name>Playable Aliens Improved</Name>
+    <Description>Description of My XCOM 2 Mod.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>Playable Aliens Improved</AssemblyName>
+    <RootNamespace>Playable Aliens Improved</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Content" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\PlayableAliensImproved\" />
+    <Folder Include="Src\PlayableAliensImproved\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComAlliesUnknown.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComBirthdays.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComClassData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameBoard.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameData_WeaponData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComMissionSources.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComPlayableAdvent.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\PA_Sectoid_Anim.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\UILibrary_PlayableAdvent.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\AlliesUnknownRedux.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\PlayableAliensImproved.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\PlayableAliensImproved\Classes\UICustomize_Info_PA.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\PlayableAliensImproved\Classes\UICustomize_Menu_PA.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\PlayableAliensImproved\Classes\X2Ability_PA.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\PlayableAliensImproved\Classes\X2Ability_DefaultAbilitySet_PA.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\PlayableAliensImproved\Classes\X2Character_PA.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\PlayableAliensImproved\Classes\X2DownloadableContentInfo_PlayableAliensImproved.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\PlayableAliensImproved\Classes\X2Effect_VolatileMixAcidBlobBonus_PA.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\PlayableAliensImproved\Classes\X2EventListener_AlienCapture_PA.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\PlayableAliensImproved\Classes\X2Item_Armors_PA.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\PlayableAliensImproved\Classes\X2Item_Weapons_PA.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\PlayableAliensImproved\Classes\X2StrategyElement_Countries_PA.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\PlayableAliensImproved\Classes\X2StrategyElement_CovertActions_PA.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\PlayableAliensImproved\Classes\X2StrategyElement_Rewards_PA.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\PlayableAliensImproved\Classes\XComGameState_Unit_PA.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\PlayableAliensImproved\Classes\XGCharacterGenerator_PA.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
