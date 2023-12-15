@@ -8,7 +8,10 @@
 //  Copyright (c) 2016 Firaxis Games, Inc. All rights reserved.
 //---------------------------------------------------------------------------------------
 
-class X2DownloadableContentInfo_PlayableAliensImproved extends X2DownloadableContentInfo;
+class X2DownloadableContentInfo_PlayableAliensImproved extends X2DownloadableContentInfo config(PlayableAdvent);
+
+
+var config int PA_AcidBlob_VolatileMixDmgBonus;
 
 /// <summary>
 /// This method is run if the player loads a saved game that was created prior to this DLC / Mod being installed, and allows the 
@@ -740,19 +743,6 @@ static event OnPostTemplatesCreated()
 	EditVolatileMix();
 }
 
-static function EditGrenadeThrow()
-{
-	local X2AbilityTemplateManager		AbilityManager;
-	local X2AbilityTemplate				AbilityTemplate;
-
-	AbilityManager = class'X2AbilityTemplateManager'.static.GetAbilityTemplateManager();
-
-	AbilityTemplate = AbilityManager.FindAbilityTemplate('ThrowGrenade');
-
-	AbilityTemplate.eAbilityIconBehaviorHUD = eAbilityIconBehavior_HideIfOtherAvailable;
-	AbilityTemplate.HideIfAvailable.AddItem('PA_LaunchGrenade');
-}
-
 static function EditVolatileMix()
 {
 	local X2AbilityTemplateManager				AbilityManager;
@@ -766,7 +756,7 @@ static function EditVolatileMix()
 	PA_MixEffect = new class'X2Effect_VolatileMixAcidBlobBonus_PA';
 	PA_MixEffect.BuildPersistentEffect(1, true, false, false);
 	//PA_MixEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.GetMyLongDescription(), Template.IconImage,,,Template.AbilitySourceName);
-	PA_MixEffect.BonusDamage = 2;
+	PA_MixEffect.BonusDamage = default.PA_AcidBlob_VolatileMixDmgBonus;
 
 	AbilityTemplate.AbilityTargetEffects.AddItem(PA_MixEffect);
 }

@@ -1,6 +1,8 @@
 class X2Ability_PA extends X2Ability config(PlayableAdvent);
 
 var config int PA_Bayonet_Cooldown;
+var config int PA_AcidBlob_Cooldown;
+var config int PA_WallSmash_MobilityBonus;
 
 static function array<X2DataTemplate> CreateTemplates()
 {
@@ -152,7 +154,7 @@ static function X2AbilityTemplate PA_AcidBlob()
 
 	// Cooldown on the ability
 	Cooldown = new class'X2AbilityCooldown';
-	Cooldown.iNumTurns = 0;
+	Cooldown.iNumTurns = default.PA_AcidBlob_Cooldown;
 	Template.AbilityCooldown = Cooldown;
 	
 	AmmoCost = new class'X2AbilityCost_Ammo';
@@ -245,7 +247,7 @@ static function X2AbilityTemplate PA_WallSmash()
 	MobilityBonusEffect = new class'X2Effect_PersistentStatChange';
 	MobilityBonusEffect.EffectName = 'PA_WallSmashBonusMobilityEffect';
 	MobilityBonusEffect.BuildPersistentEffect(1, true, false);
-	MobilityBonusEffect.AddPersistentStatChange(eStat_Mobility, 2);
+	MobilityBonusEffect.AddPersistentStatChange(eStat_Mobility, default.PA_WallSmash_MobilityBonus);
 	Template.AddTargetEffect(MobilityBonusEffect);
 
 	Template.bShowActivation = true;
