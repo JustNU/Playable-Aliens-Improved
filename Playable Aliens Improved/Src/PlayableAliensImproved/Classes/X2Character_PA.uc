@@ -110,7 +110,7 @@ static function X2CharacterTemplate CreateTemplate_Andromedon()
 	CharTemplate.Abilities.AddItem('BondmateSpotter_Aim_Adjacency');
 	CharTemplate.Abilities.AddItem('BondmateDualStrike');
 	
-	CharTemplate.UICustomizationMenuClass = class'UICustomize_Info_PA';
+	CharTemplate.UICustomizationMenuClass = class'UICustomize_Menu_PA';
 	CharTemplate.UICustomizationInfoClass = class'UICustomize_Info_PA';
 	CharTemplate.strTargetIconImage = class'UIUtilities_Image'.const.TargetIcon_XCom;
 	CharTemplate.strAutoRunNonAIBT = "SoldierAutoRunTree";
@@ -222,7 +222,7 @@ static function X2CharacterTemplate CreateTemplate_Sectoid()
 	//CharTemplate.Abilities.AddItem('BondmateReturnFire_Improved_Adjacency');
 	CharTemplate.Abilities.AddItem('BondmateDualStrike');
 	
-	CharTemplate.UICustomizationMenuClass = class'UICustomize_Info_PA';
+	CharTemplate.UICustomizationMenuClass = class'UICustomize_Menu_PA';
 	CharTemplate.UICustomizationInfoClass = class'UICustomize_Info_PA';
 	CharTemplate.strTargetIconImage = class'UIUtilities_Image'.const.TargetIcon_XCom;
 	CharTemplate.strAutoRunNonAIBT = "SoldierAutoRunTree";
@@ -326,7 +326,7 @@ static function X2CharacterTemplate CreateTemplate_Muton()
 	CharTemplate.Abilities.AddItem('BondmateSpotter_Aim_Adjacency');
 	CharTemplate.Abilities.AddItem('BondmateDualStrike');
 
-	CharTemplate.UICustomizationMenuClass = class'UICustomize_Info_PA';
+	CharTemplate.UICustomizationMenuClass = class'UICustomize_Menu_PA';
 	CharTemplate.UICustomizationInfoClass = class'UICustomize_Info_PA';
 	CharTemplate.strTargetIconImage = class'UIUtilities_Image'.const.TargetIcon_XCom;
 	CharTemplate.strAutoRunNonAIBT = "SoldierAutoRunTree";
