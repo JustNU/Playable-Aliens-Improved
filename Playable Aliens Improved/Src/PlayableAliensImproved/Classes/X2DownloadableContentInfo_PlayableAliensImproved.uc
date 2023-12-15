@@ -301,7 +301,7 @@ static function UpdateStorage()
 		} 
 	}
 
-	ItemTemplate = ItemTemplateMgr.FindItemTemplate('PA_AcidBlob');
+	ItemTemplate = ItemTemplateMgr.FindItemTemplate('PA_AndromedonLauncher_CV');
 	if(ItemTemplate != none)
 	{
 		if (!XComHQ.HasItem(ItemTemplate))
@@ -465,6 +465,22 @@ static function UpdateStorage()
 	if(XComHQ.HasItemByName('PsiAmp_MG'))
 	{
 		ItemTemplate = ItemTemplateMgr.FindItemTemplate('PA_SectoidPsiAmp_MG');
+		if(ItemTemplate != none)
+		{
+			if (!XComHQ.HasItem(ItemTemplate))
+			{
+				NewItemState = ItemTemplate.CreateInstanceFromTemplate(NewGameState);
+				NewGameState.AddStateObject(NewItemState);
+				XComHQ.AddItemToHQInventory(NewItemState);
+				CleanupGameState = false;
+			} 
+		}
+	}
+
+	// mag grenade launchers
+	if(XComHQ.HasItemByName('GrenadeLauncher_MG'))
+	{
+		ItemTemplate = ItemTemplateMgr.FindItemTemplate('PA_AndromedonLauncher_MG');
 		if(ItemTemplate != none)
 		{
 			if (!XComHQ.HasItem(ItemTemplate))

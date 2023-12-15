@@ -687,7 +687,6 @@ static function X2DataTemplate CreateTemplate_PA_MutonBayonet_Beam()
 	return Template;
 }
 
-
 static function X2DataTemplate CreateTemplate_PA_SectoidPistol_Conventional()
 {
 	local X2WeaponTemplate Template;
