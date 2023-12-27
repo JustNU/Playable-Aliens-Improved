@@ -13,6 +13,7 @@ static function array<X2DataTemplate> CreateTemplates()
 	Templates.AddItem(PA_AcidBlob());
 	Templates.AddItem(PA_WallSmash());
 	Templates.AddItem(PA_WallSmashCancel());
+	Templates.AddItem(PA_WallSmashDesc());
 
 	return Templates;
 }
@@ -223,6 +224,7 @@ static function X2AbilityTemplate PA_WallSmash()
 
 	Template.AbilitySourceName = 'eAbilitySource_Perk';
 	Template.eAbilityIconBehaviorHUD = eAbilityIconBehavior_ShowIfAvailable;
+	Template.bHideOnClassUnlock = true;
 	Template.HideErrors.AddItem('AA_CannotAfford_Charges');
 	Template.HideErrors.AddItem('AA_MissingRequiredEffect');
 	Template.Hostility = eHostility_Neutral;
@@ -302,5 +304,15 @@ static function X2AbilityTemplate PA_WallSmashCancel()
 	Template.bShowActivation = true;
 	Template.bSkipFireAction = true;
 
+	return Template;
+}
+
+static function X2AbilityTemplate PA_WallSmashDesc()
+{
+
+	local X2AbilityTemplate Template;
+
+	Template = PurePassive('PA_WallSmashDesc', "img:///UILibrary_DLC3Images.UIPerk_spark_wreckingball");
+	
 	return Template;
 }
