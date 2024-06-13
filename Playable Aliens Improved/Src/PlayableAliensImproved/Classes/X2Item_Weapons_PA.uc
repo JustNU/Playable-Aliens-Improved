@@ -584,6 +584,7 @@ static function X2DataTemplate CreateTemplate_PA_MutonBayonet_Conventional()
 	Template.bInfiniteItem = true;
 
 	Template.Abilities.AddItem('PA_Bayonet');
+	Template.Abilities.AddItem('CounterattackBayonet');
 
 	Template.DamageTypeTemplateName = 'Melee';
 
@@ -632,6 +633,7 @@ static function X2DataTemplate CreateTemplate_PA_MutonBayonet_Magnetic()
 	Template.bInfiniteItem = true;
 
 	Template.Abilities.AddItem('PA_Bayonet');
+	Template.Abilities.AddItem('CounterattackBayonet');
 
 	Template.DamageTypeTemplateName = 'Melee';
 
@@ -680,6 +682,7 @@ static function X2DataTemplate CreateTemplate_PA_MutonBayonet_Beam()
 	Template.bInfiniteItem = true;
 
 	Template.Abilities.AddItem('PA_Bayonet');
+	Template.Abilities.AddItem('CounterattackBayonet');
 
 	Template.DamageTypeTemplateName = 'Melee';
 

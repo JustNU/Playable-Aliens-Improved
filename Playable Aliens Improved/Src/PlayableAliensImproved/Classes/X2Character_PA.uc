@@ -313,8 +313,7 @@ static function X2CharacterTemplate CreateTemplate_Muton()
 	CharTemplate.Abilities.AddItem('DisableConsumeAllPoints');
 	CharTemplate.Abilities.AddItem('Revive');
 	CharTemplate.Abilities.AddItem('PA_HunkerDown');
-
-	CharTemplate.Abilities.AddItem('CounterattackDescription');
+	
 	CharTemplate.Abilities.AddItem('CounterattackPreparation');
 
 	// bondmate abilities
