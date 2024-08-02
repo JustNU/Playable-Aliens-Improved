@@ -17,6 +17,9 @@
     <Folder Include="Src\PlayableAliensImproved\Classes\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Config\XComAbilityToSlotReassignment.ini">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Config\XComAlliesUnknown.ini">
       <SubType>Content</SubType>
     </Content>
@@ -38,10 +41,19 @@
     <Content Include="Config\XComGameData_WeaponData.ini">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Config\XComLatentPsionics.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComLW2SecondariesWOTC.ini">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Config\XComMissionSources.ini">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\XComPlayableAdvent.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComPsiOverhaul.ini">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\XComWeaponSkinReplacer.ini">
